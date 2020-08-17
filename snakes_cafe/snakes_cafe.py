@@ -1,5 +1,8 @@
+from textwrap import dedent
+
 def welcome():
-    print(
+    print(dedent(
+            
     """
     **************************************
     **    Welcome to the Snakes Cafe!   **
@@ -34,8 +37,16 @@ def welcome():
     Unicorn Tears
 
     """
-)
+))
 welcome()
+
+print(dedent(
+"""
+***********************************
+** What would you like to order? **
+***********************************
+"""
+))
 
 menu_list = ['Wings', 'Cookies', 'Spring Rolls', 'Salmon', 'Steak', 'Meat Tornado', 'A Literal Garden', 'IceCream', 'Cake', 'Pie', 'Coffee', 'Tea', 'UnicornTears']
 
